@@ -1,2 +1,7 @@
 export { default as Header } from './main/header'
 export { default as Footer } from './main/footer'
+export { default as Text } from './main/text'
+export { default as Others } from './main/others'
+export { default as Features } from './main/features'
+export { default as Sub } from './main/sub'
+export { default as Com } from './main/com'

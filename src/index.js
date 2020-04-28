@@ -9,26 +9,42 @@ const theme = createMuiTheme({
       main: '#9A60F2',
       light: '#C4ADF4',
       dark: '#7246CE',
+      clear: '#7246CE',
       contrastText: '#fff',
     },
     secondary: {
-      main: '#6F39E1',
+      main: '#ffab40',
       light: '#B68BF7',
       dark: '#6F39E1',
       contrastText: '#fff',
     },
+    contrast: {
+      main: '#ffab40',
+      light: '#B68BF7',
+      dark: '#6F39E1',
+      contrastText: '#fff',
+    },
+    text:{
+      main: '#fff',
+    },
+    header1:{
+      main: '#C4ADF4',
+    },
+    header2:{
+      main: '#7246CE',
+    },
   },
   typography: {
-    useNextVariants: true
-  }
-});
+    fontFamily: [
+      'lato'
+    ].join(','),
+  },
+})
 
 ReactDOM.render(
-  <React.StrictMode>
-    <MuiThemeProvider theme={theme}>
-      <App />
-    </MuiThemeProvider>
-  </React.StrictMode>,
-  document.querySelector('#root')
-);
+  <MuiThemeProvider theme={theme}>
+    <App />
+  </MuiThemeProvider>,
+  document.getElementById('root')
+)
 
